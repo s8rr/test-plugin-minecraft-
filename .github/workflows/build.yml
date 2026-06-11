@@ -1,1 +1,31 @@
+name: Build Minecraft Plugin
 
+on:
+  push:
+    branches: [ "main" ] # Triggers whenever you save changes to the main branch
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/actions-java-setup@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Build with Maven
+      run: mvn clean package --file pom.xml
+
+    - name: Upload Finished Plugin Jar
+      uses: actions/upload-artifact@v4
+      with:
+        name: SimpleFly-Plugin
+        path: target/*.jar
