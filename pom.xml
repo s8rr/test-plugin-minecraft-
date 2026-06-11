@@ -12,14 +12,11 @@
         <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <repositories>
-        <repository>
-            <id>papermc</id>
-            <url>https://repo.papermc.io/repository/maven-public/</url>
-        </repository>
-    </repositories>
-
+         <repository>
+           <id>papermc</id>
+           <name>PaperMC Maven Repository</name>
+           <url>https://reposilite.papermc.io/<repository></url>
+         </repository>
     <dependencies>
         <dependency>
             <groupId>io.papermc.paper</groupId>
