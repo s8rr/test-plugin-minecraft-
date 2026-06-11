@@ -1,6 +1,6 @@
 name: SimpleFly
 version: 1.0
-main: com.yourname.simplefly.SimpleFly
+main: com.tarara77.simplefly.SimpleFly
 api-version: '26.1.2'
 commands:
   fly:
