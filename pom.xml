@@ -24,7 +24,7 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>26.1.2-R0.1-SNAPSHOT</version> <!-- Targets 26.1.2 -->
+            <version>26.1.2</version> <!-- Targets 26.1.2 -->
             <scope>provided</scope>
         </dependency>
     </dependencies>
