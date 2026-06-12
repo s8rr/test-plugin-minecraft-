@@ -11,6 +11,11 @@ commands:
     permission: flyplugin.use
     usage: /fly [toggle]
 
+  commands:
+  hello:
+    description: A simple test command.
+    usage: /hello
+
 permissions:
   flyplugin.use:
     description: Allows players to use the fly command and double jump to fly.
