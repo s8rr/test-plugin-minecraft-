@@ -4,6 +4,10 @@ on:
   release:
     types: [published]
 
+# THIS IS THE NEW PART: Grant write permission to upload release assets
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
