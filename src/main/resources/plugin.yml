@@ -1,9 +1,0 @@
-name: SimpleFly
-version: 1.0
-main: com.yourname.simplefly.SimpleFly
-api-version: '26.1'
-commands:
-  fly:
-    description: Toggle flight mode.
-    permission: simplefly.use
-    permission-message: You do not have permission to use this command!
