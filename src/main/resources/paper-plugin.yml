@@ -1,0 +1,17 @@
+name: FlyPlugin
+version: '1.0.0'
+main: com.tarara77.flyplugin.FlyPlugin
+api-version: '26.1'
+author: Developer
+description: Allow players to fly using /fly or by double-jumping.
+
+commands:
+  fly:
+    description: Toggle flight mode.
+    permission: flyplugin.use
+    usage: /fly [toggle]
+
+permissions:
+  flyplugin.use:
+    description: Allows players to use the fly command and double jump to fly.
+    default: op
