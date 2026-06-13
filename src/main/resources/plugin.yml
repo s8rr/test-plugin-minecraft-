@@ -1,0 +1,19 @@
+name: FlyPlugin
+version: '${project.version}'
+main: com.example.flyplugin.FlyPlugin
+api-version: '1.21'
+description: Let players fly with /fly command or double jump.
+authors:
+  - YourName
+
+commands:
+  fly:
+    description: Toggle flight on or off.
+    usage: /fly
+    permission: flyplugin.fly
+    aliases: [flight]
+
+permissions:
+  flyplugin.fly:
+    description: Allows the player to use /fly and double jump to fly.
+    default: op
