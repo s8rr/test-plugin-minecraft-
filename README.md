@@ -1,2 +1,2 @@
-# test-plugin-minecraft-
-testing
+# plugin-minecraft
+
